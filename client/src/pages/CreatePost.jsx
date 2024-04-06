@@ -4,6 +4,9 @@ import { preview } from '../assets';
 import { getRandomPrompt } from '../utils';
 import { FormField, Loader } from '../components';
 
+const OPENAI_API_KEY = import.meta.env.VITE_OPENAI_API_KEY;
+// console.log(OPENAI_API_KEY)
+
 const CreatePost = () => {
   const navigate = useNavigate();
   const [form, setForm] = useState({
@@ -18,24 +21,26 @@ const CreatePost = () => {
     if (form.prompt) {
       try {
         setGeneratingImg(true);
-        const response = await fetch('https://api.openai.com/v1/images/generations', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-            Authorization: 
-            'Bearer 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',
-            'User-Agent': 'Chrome',
-          },
-          body: JSON.stringify({ 
-            prompt: form.prompt ,
-            n: 1,
-            size: '512x512',
-          }),
-        });
+        const response = await fetch(
+          'https://api.openai.com/v1/images/generations',
+          {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+              Authorization: `Bearer ${OPENAI_API_KEY}`,
+              'User-Agent': 'Chrome',
+            },
+            body: JSON.stringify({
+              prompt: form.prompt,
+              n: 1,
+              size: '512x512',
+            }),
+          }
+        );
         const data = await response.json();
         // console.log(data);
         let data_array = data.data;
-        setForm({...form, photo: data_array[0].url});
+        setForm({ ...form, photo: data_array[0].url });
       } catch (error) {
         alert(error);
       } finally {

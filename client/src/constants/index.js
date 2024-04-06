@@ -1,4 +1,10 @@
 export const surpriseMePrompts = [
+    'A watercolor painting of a flock of birds flying over a river at sunset with realistic textures.',
+    'A photograph of an old man walking in the rain making eye contact with the viewer in a mid-shot view.',
+    'A photograph of a person sitting on a bench facing the sunset in black and white.',
+    'A low-detail oil painting of a thunderstorm over a cityscape with dark tones and a backlit resolution.',
+    'A picture of a person walking alone through a forest in the style of Romanticism taken from an aerial viewpoint.',
+    'An old woman washing her clothes in the winter in the style of Renaissance art with a narrow aspect ratio.',
     'an armchair in the shape of an avocado',
     'a surrealist dream-like oil painting by Salvador Dalí of a cat playing checkers',
     'teddy bears shopping for groceries in Japan, ukiyo-e',
