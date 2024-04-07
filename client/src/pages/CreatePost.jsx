@@ -22,7 +22,7 @@ const CreatePost = () => {
       try {
         setGeneratingImg(true);
         const response = await fetch(
-          'https://api.openai.com/v1/images/generations',
+          `${import.meta.env.VITE_OPENAI_URL}`,
           {
             method: 'POST',
             headers: {
