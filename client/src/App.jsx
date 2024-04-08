@@ -12,12 +12,6 @@ import {
 const App = () => {
   return (
     <header>
-      <SignedOut>
-      <SignInButton>
-        <button className="font-inter font-medium bg-[#6469ff] text-white px-4 py-2 rounded-md">Sign in with Clerk</button>
-      </SignInButton>
-      </SignedOut>
-      <SignedIn>
         <BrowserRouter>
           <header className="w-full flex justify-between items-center bg-white sm:px-8 px-4 py-4 border-b border-b-[#e6ebf4]">
             <Link to="/">
@@ -30,7 +24,6 @@ const App = () => {
               >
                 Create
               </Link>
-              <UserButton />
             </div>
           </header>
           <main className="sm:p-8 px-4 py-8 w-full bg-[#f9fafe] min-h-[calc(100vh-73px)]">
@@ -40,7 +33,6 @@ const App = () => {
             </Routes>
           </main>
         </BrowserRouter>
-      </SignedIn>
     </header>
   );
 };
