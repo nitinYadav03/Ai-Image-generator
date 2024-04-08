@@ -2,12 +2,6 @@ import React from 'react';
 import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
 import { logo } from './assets';
 import { Home, CreatePost } from './pages';
-import {
-  SignedIn,
-  SignedOut,
-  SignInButton,
-  UserButton,
-} from '@clerk/clerk-react';
 
 const App = () => {
   return (
