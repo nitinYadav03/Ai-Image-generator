@@ -6,7 +6,7 @@ Developed a full-stack application enabling users to generate unique images base
 
 ## Screenshots
 
-![App Screenshot](https://i.ibb.co/J204qF6/Screenshot-2024-04-11-at-12-23-00-PM.png)
+![App Screenshot](https://i.ibb.co/NnRPkj1/Screenshot-2024-04-11-at-12-23-00-PM.png)
 
 
 ## Run Locally
@@ -35,3 +35,13 @@ Start the server
   npm run dev
 ```
 
+## Tech Stack Used : 
+
+• AI integration: Utilized Openai's API for powerful image generation.
+<br>
+• MERN stack: Leveraged Node.js, Express, React, and MongoDB for robust
+backend and frontend.
+<br>
+• Tailwind CSS: Implemented a modern and responsive user interface.
+<br>
+• Cloudinary: Handled image storage, manipulation, and delivery efficiently.
