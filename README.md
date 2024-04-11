@@ -20,7 +20,7 @@ Clone the project
 Go to the project directory
 
 ```bash
-  cd my-project
+  cd client
 ```
 
 Install dependencies
@@ -33,6 +33,18 @@ Start the server
 
 ```bash
   npm run dev
+```
+
+Go to the project directory
+
+```bash
+  cd server
+```
+
+Start the server
+
+```bash
+  npm start
 ```
 
 ## Tech Stack Used : 
